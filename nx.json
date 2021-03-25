@@ -1,0 +1,18 @@
+{
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": "*",
+    "tslint.json": "*",
+    ".eslintrc.json": "*",
+    "nx.json": "*",
+    "tsconfig.base.json": "*"
+  },
+  "affected": { "defaultBase": "master" },
+  "npmScope": "poc-angular",
+  "projects": {
+    "POC-angular": { "tags": [] },
+    "POC-angular-e2e": { "tags": [], "implicitDependencies": ["POC-angular"] },
+    "myapp": { "tags": [] },
+    "myapp-e2e": { "tags": [], "implicitDependencies": ["myapp"] }
+  }
+}

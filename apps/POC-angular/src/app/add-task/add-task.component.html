@@ -1,0 +1,9 @@
+<div>
+    <h3>Enter the task description here</h3>
+    <div style="width: 200px;">
+        <textarea [(ngModel)]="text" name="text" rows="10" cols="45" style="border: 1px solid black;"></textarea>
+    </div>
+    <div style="margin-top: 20px;">
+        <button mat-raised-button color="accent" (click)="submit()">Submit</button>
+    </div>
+</div>

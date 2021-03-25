@@ -1,0 +1,23 @@
+
+<div class="box">
+    <mat-card class="login-card">
+        <mat-card-content>
+            <div class="login-img">
+                <mat-icon class="login-icon">account_circle</mat-icon>
+            </div>
+            <form>
+                <mat-form-field class="full-width">
+                    <mat-label>Username</mat-label>
+                    <input matInput [(ngModel)]="email" name="email" required/>
+                </mat-form-field>
+                <mat-form-field class="full-width">
+                    <mat-label>Password</mat-label>
+                    <input type="password" matInput [(ngModel)]="password" name="password" required/>
+                </mat-form-field>
+            </form>
+        </mat-card-content>
+        <mat-card-actions style="text-align: center;">
+            <button mat-raised-button (click)="checkUser()" color="warn">Submit</button>
+        </mat-card-actions>
+    </mat-card>
+</div>
