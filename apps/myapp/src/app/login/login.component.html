@@ -6,13 +6,13 @@
                 <mat-icon class="login-icon">account_circle</mat-icon>
             </div>
             <form>
-                <mat-form-field class="full-width">
-                    <mat-label>Username</mat-label>
-                    <input matInput [(ngModel)]="email" name="email" required/>
+                <mat-form-field class="full-width" id="username">
+                    <mat-label id="uname">Username</mat-label>
+                    <input matInput [(ngModel)]="email" name="email" id="email" required/>
                 </mat-form-field>
-                <mat-form-field class="full-width">
-                    <mat-label>Password</mat-label>
-                    <input type="password" matInput [(ngModel)]="password" name="password" required/>
+                <mat-form-field class="full-width" id="pass">
+                    <mat-label id="pass">Password</mat-label>
+                    <input type="password" matInput [(ngModel)]="password" id="password" name="password" required/>
                 </mat-form-field>
             </form>
         </mat-card-content>
