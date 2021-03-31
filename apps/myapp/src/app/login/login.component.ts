@@ -11,8 +11,8 @@ export class LoginComponent {
   email:string;
   password:string;
 
-  user_email:string = "Samyuktaa.Balaji@cat.com";
-  user_pass:string = "123456789";
+  user_email:string = "xyz@cat.com";
+  user_pass:string = "1234";
 
   constructor(private router: Router) { 
     this.email = "";
@@ -24,6 +24,11 @@ export class LoginComponent {
     const usr_password = this.password;
     if((this.user_email==usr_email) && (this.user_pass==usr_password)){
       this.router.navigate(['/dashboard']);
+    }
+    else{
+      alert("INVALID USERNAME AND PASSWORD");
+      this.email = "";
+      this.password = "";
     }
     return false;
   }

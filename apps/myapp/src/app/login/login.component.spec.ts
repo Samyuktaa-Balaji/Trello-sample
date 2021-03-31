@@ -11,15 +11,15 @@ describe('LoginComponent',() => {
 
   describe('Test case',() => {
 
-    test('first test case',() => {
+    test('test case 1',() => {
       expect(fixture.email).toEqual("");
       expect(fixture.password).toEqual("");
-      expect(fixture.user_email).toEqual("Samyuktaa.Balaji@cat.com");
-      expect(fixture.user_pass).toEqual("123456789");
+      expect(fixture.user_email).toEqual("xyz@cat.com");
+      expect(fixture.user_pass).toEqual("1234");
     });
 
-    test('second test case',() => {
-      expect(fixture.checkUser()).not.toBeFalsy;
-    })
+    test('test case 2',() => {
+      expect(fixture.checkUser()).toBeTruthy;
+    });
   });
 });

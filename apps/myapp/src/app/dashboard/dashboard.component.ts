@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MatDialogConfig, MatDialog, MatDialogRef} from '@angular/material/dialog';
+import { MatDialogConfig, MatDialog} from '@angular/material/dialog';
 import { AddTaskComponent } from '../add-task/add-task.component';
 import {CdkDragDrop, moveItemInArray, transferArrayItem} from '@angular/cdk/drag-drop';
 
@@ -63,7 +63,6 @@ export class DashboardComponent {
                         event.previousIndex,
                         event.currentIndex);
     }
-    console.log(this.todo)
   }
 
   edit(item:string){

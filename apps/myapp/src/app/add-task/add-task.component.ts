@@ -9,14 +9,11 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 export class AddTaskComponent{
   text: string;
 
-  constructor(
-    public dialogRef: MatDialogRef<AddTaskComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: string
-  ) {
+  constructor(public dialogRef: MatDialogRef<AddTaskComponent>,@Inject(MAT_DIALOG_DATA) public data: string) {
     this.text = this.data;
   }
 
   submit() {
-    this.dialogRef.close(true);
+    this.dialogRef.close(this.text);
   }
 }
