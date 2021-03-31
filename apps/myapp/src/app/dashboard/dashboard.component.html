@@ -8,15 +8,15 @@
                 <div *ngFor="let item of todo" cdkDrag>
                     <mat-card class="sub-card">
                             <span>{{item}}</span>
-                        <mat-card-actions>
-                            <button style="border: none;background-color: white;float: right;" (click)=delete(item)><mat-icon class="button">delete</mat-icon></button>
-                            <button style="border: none;background-color: white;float: right;" (click)="edit(item)"><mat-icon class="button">create</mat-icon></button>
+                        <mat-card-actions class="sub-actions">
+                            <button style="border: none;background-color: white;float: right;" (click)=delete(item) id="delete"><mat-icon class="button">delete</mat-icon></button>
+                            <button style="border: none;background-color: white;float: right;" (click)="edit(item)" id="edit"><mat-icon class="button">create</mat-icon></button>
                         </mat-card-actions>
                     </mat-card>
                 </div>
             </div>
         </mat-card-content>
-        <mat-card-actions>
+        <mat-card-actions class="main-action">
             <button mat-button class="add-task" (click)="OnCreate()" id="add-task"> + Add Task</button>
         </mat-card-actions>
     </mat-card>

@@ -3,7 +3,7 @@ describe('AppComponent', () => {
       cy.visit("/");
     });
   
-    it('test cases', () => {
+    it('test case 1', () => {
       cy.get('p').contains("Dashboard");
       cy.get('.mat-icon');
       cy.get('.mat-toolbar');
